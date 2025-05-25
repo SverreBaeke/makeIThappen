@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+@media (max-width: 37.5rem) {
+.tasks .wrapper {
+    
+        flex-direction: column;
+    }
+}
+
+.wrapper--primary {
+    justify-content: space-between;
+}
+
+.wrapper--secondary {
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-areas: 
+    "header header "
+    "cat task";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 5rem 1fr;
+    gap: 2.5rem;
+
+    @media (max-width: 52.625rem) {
+        grid-template-areas: 
+        "header"
+        "cat"
+        "task";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    } 
+}

@@ -1,0 +1,9 @@
+<div class="input-container">
+    <label for="<%= name %>">
+        <%= label %>
+    </label>
+    <input type="<%= type %>" name="<%= name %>" value="<%= value %>">
+    <% if (err) { %>
+        <div class="input-error"><%= err %></div>
+      <% } %>
+</div>

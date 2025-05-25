@@ -1,0 +1,12 @@
+<section class="form-wrapper">
+  <h1>Login</h1>
+  <form class="form" method="post" action="login">
+    <% inputs?.forEach(input=> { %>
+      <%- include('../partials/form-input.ejs', input) %>
+        <% }); %>
+          <div class="form__cta">
+            <input class="form__submit" type="submit" value="Login">
+            <a class="form__link" href="/register">Register</a>
+          </div>
+  </form>
+</section>
